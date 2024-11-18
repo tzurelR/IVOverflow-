@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { IUser } from '../../interfaces';
-import User from '../models/userSchema';
+import User from '../models/schemas/userSchema';
 import * as userModel from '../models/userModel';
 
 const hashPassword = (password: string): Promise<String> => {
